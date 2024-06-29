@@ -48,6 +48,10 @@ const short nivel1_map[14][40] = {
 1, 1, 1, 1, 1, 1, 1, 1 }
 };
 
+// Declarar la función hintCB
+// Necesario para evitar errores de compilación...
+void hintCB() {
+}
 
 //Declarar las orillas de la pantalla
 const int ORILLA_IZQ = 0;
@@ -161,7 +165,11 @@ int main(u16 hard)
     JOY_init();//Iniciar controles
     JOY_setEventHandler( &prepararControles );//Llamar al procedimiento de preparar controles
 
-    ind = TILE_USERINDEX;//Cargar los fondos
+    /**
+    * ACTUALIZADO!
+    * TILE_USERINDEX en deshuso.
+    */
+    ind = TILE_USER_INDEX;//Cargar los fondos
     bgBaseTileIndex[0] = ind;
     VDP_loadTileSet(&bga_tileset, ind, DMA);//Primero
     ind += bga_tileset.numTile;
@@ -169,12 +177,17 @@ int main(u16 hard)
     VDP_loadTileSet(&bgb_tileset, ind, DMA);//Segundo
     ind += bgb_tileset.numTile;
 
-    VDP_setPalette(PAL0, background1.palette->data);//Colorear primer fondo
-    VDP_setPalette(PAL0, background2.palette->data);//Colorear segundo fondo
+
+    /**
+    * ACTUALIZADO!
+    * VDP_setPalette(PAL0, background1.palette->data) en deshuso.
+    */
+    PAL_setPalette(PAL0, background1.palette->data, DMA);//Colorear primer fondo
+    PAL_setPalette(PAL0, background2.palette->data, DMA);//Colorear segundo fondo
 
     VDP_drawText("HOLA MUNDO",1,1);//Escribir texto en las posiciones indicadas
-    VDP_setPaletteColor(PAL0,RGB24_TO_VDPCOLOR(0x6dc2ca));//Cargar color de fondo
-    VDP_setPalette(PAL1, sprJugador.palette->data);
+    PAL_setPalette(PAL0,RGB24_TO_VDPCOLOR(0x6dc2ca), DMA);//Cargar color de fondo
+    PAL_setPalette(PAL1, sprJugador.palette->data, DMA);
 
     SPR_init();//Iniciar sprite del personaje
     jugador = SPR_addSprite(&sprJugador,plx-8,ply,TILE_ATTR(PAL1,0, FALSE, FALSE));//Agregar sprite del personaje

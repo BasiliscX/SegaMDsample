@@ -1,18 +1,20 @@
-out/src/main.o: src/main.c C:/SGDK-master/inc/genesis.h \
- C:/SGDK-master/inc/config.h C:/SGDK-master/inc/asm.h \
- C:/SGDK-master/inc/types.h C:/SGDK-master/inc/sys.h \
- C:/SGDK-master/inc/sram.h C:/SGDK-master/inc/mapper.h \
- C:/SGDK-master/inc/memory.h C:/SGDK-master/inc/tools.h \
- C:/SGDK-master/inc/bmp.h C:/SGDK-master/inc/maths.h \
- C:/SGDK-master/inc/vdp.h C:/SGDK-master/inc/pal.h \
- C:/SGDK-master/inc/dma.h C:/SGDK-master/inc/vdp_tile.h \
- C:/SGDK-master/inc/vdp_bg.h C:/SGDK-master/inc/map.h \
- C:/SGDK-master/inc/font.h C:/SGDK-master/res/libres.h \
- C:/SGDK-master/inc/string.h C:/SGDK-master/inc/tab_cnv.h \
- C:/SGDK-master/inc/maths3D.h C:/SGDK-master/inc/vdp_dma.h \
- C:/SGDK-master/inc/vdp_spr.h C:/SGDK-master/inc/vdp_pal.h \
- C:/SGDK-master/inc/vram.h C:/SGDK-master/inc/sprite_eng.h \
- C:/SGDK-master/inc/sound.h C:/SGDK-master/inc/xgm.h \
- C:/SGDK-master/inc/z80_ctrl.h C:/SGDK-master/inc/ym2612.h \
- C:/SGDK-master/inc/psg.h C:/SGDK-master/inc/joy.h \
- C:/SGDK-master/inc/timer.h res/resources.h
+out/src/main.o: src/main.c C:/SGDK/inc/genesis.h C:/SGDK/inc/types.h \
+ C:/SGDK/inc/config.h C:/SGDK/inc/asm.h C:/SGDK/inc/sys.h \
+ C:/SGDK/inc/sram.h C:/SGDK/inc/mapper.h C:/SGDK/inc/memory.h \
+ C:/SGDK/inc/memory_base.h C:/SGDK/inc/tools.h C:/SGDK/inc/bmp.h \
+ C:/SGDK/inc/maths.h C:/SGDK/inc/vdp.h C:/SGDK/inc/pal.h \
+ C:/SGDK/inc/dma.h C:/SGDK/inc/vdp_tile.h C:/SGDK/inc/vdp_bg.h \
+ C:/SGDK/inc/map.h C:/SGDK/inc/pool.h C:/SGDK/inc/object.h \
+ C:/SGDK/inc/font.h C:/SGDK/res/libres.h C:/SGDK/inc/string.h \
+ C:/SGDK/inc/tab_cnv.h C:/SGDK/inc/maths3D.h C:/SGDK/inc/vdp_spr.h \
+ C:/SGDK/inc/vdp_pal.h C:/SGDK/inc/vram.h C:/SGDK/inc/sprite_eng.h \
+ C:/SGDK/inc/sprite_eng_legacy.h C:/SGDK/inc/z80_ctrl.h \
+ C:/SGDK/inc/ym2612.h C:/SGDK/inc/psg.h C:/SGDK/inc/snd/sound.h \
+ C:/SGDK/inc/snd/xgm.h C:/SGDK/inc/snd/xgm2.h C:/SGDK/inc/snd/smp_null.h \
+ C:/SGDK/inc/snd/smp_null_dpcm.h C:/SGDK/inc/snd/pcm/snd_pcm.h \
+ C:/SGDK/inc/snd/pcm/snd_dpcm2.h C:/SGDK/inc/snd/pcm/snd_pcm4.h \
+ C:/SGDK/inc/joy.h C:/SGDK/inc/timer.h C:/SGDK/inc/task.h \
+ C:/SGDK/inc/task_cst.h C:/SGDK/inc/ext/flash-save/flash.h \
+ C:/SGDK/inc/types.h C:/SGDK/inc/ext/flash-save/saveman.h \
+ C:/SGDK/inc/ext/console.h C:/SGDK/inc/config.h C:/SGDK/inc/string.h \
+ C:/SGDK/inc/maths.h C:/SGDK/inc/dma.h res/resources.h
